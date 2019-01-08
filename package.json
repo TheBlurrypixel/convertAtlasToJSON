@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TheBlurrypixel/convertAtlasToJSON/issues"
   },
-  "homepage": "https://github.com/TheBlurrypixel/convertAtlasToJSON#readme"
+  "homepage": "https://github.com/TheBlurrypixel/convertAtlasToJSON#readme",
+  "dependencies": {
+    "electron": "^4.0.1"
+  }
 }
