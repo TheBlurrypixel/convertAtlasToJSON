@@ -1,0 +1,19 @@
+{
+  "name": "convertatlastojson",
+  "version": "1.0.0",
+  "description": "Convert Spine .atlas file to .json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBlurrypixel/convertAtlasToJSON.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheBlurrypixel/convertAtlasToJSON/issues"
+  },
+  "homepage": "https://github.com/TheBlurrypixel/convertAtlasToJSON#readme"
+}
