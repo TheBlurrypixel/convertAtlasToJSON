@@ -12,6 +12,28 @@ function start() {
 
   var res = {};
 
+  function assayTokens(tokens) {
+    tokens.forEach((i) => {
+      if(re.test(i)) {
+        // console.log('i is: ' + i);
+        let solves = i.match(/[^\.]+/g);
+        res['name'] = solves.input ? solves : solves.reduce( (acc, cur) => {
+          return acc + '_' + cur;
+        });
+      }
+      else if(re2.test(i)) {
+        console.log(i + ' going up a level');
+      }
+      else {
+        var propSplits = i.split(':', 2);
+        var resSplits = propSplits.map( (item) => {
+          return item.trim();
+        });
+        res[resSplits[0]] = resSplits[1];
+      }
+    });
+  }
+
 	if((files) && (files.length > 0)) {
     var atlasText = fs.readFileSync(files[0], 'utf8');
     var tokens = atlasText.trim().split('\n');
