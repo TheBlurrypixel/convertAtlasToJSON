@@ -1,0 +1,20 @@
+
+king.png
+size: 72,72
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+king
+  rotate: false
+  xy: 2, 37
+  size: 38, 33
+  orig: 38, 33
+  offset: 0, 0
+  index: -1
+kingGlow
+  rotate: false
+  xy: 2, 2
+  size: 38, 33
+  orig: 38, 33
+  offset: 0, 0
+  index: -1
