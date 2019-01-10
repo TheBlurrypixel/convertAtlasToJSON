@@ -29,8 +29,15 @@ function start() {
         var propSplits = i.split(':', 2);
         var resSplits = propSplits.map( (item) => {
           return item.trim();
+          // return isNaN(propStr) ? propStr : +propStr;
         });
-        res[resSplits[0].replace(/\.+/g,'_')] = resSplits[1];
+        let propStrs = resSplits[1].split(',');
+        let newPropStrs = propStrs.map( (itemStr) => {
+          let trimmed = itemStr.trim();
+          console.log(trimmed + " isNaN: " + isNaN(trimmed));
+          return isNaN(trimmed) ? trimmed : +trimmed;
+        });
+        res[resSplits[0].replace(/\.+/g,'_')] = newPropStrs;
       }
     }
 
